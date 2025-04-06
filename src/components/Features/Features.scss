@@ -1,0 +1,37 @@
+
+@mixin flex($direction : row,$gap : 1rem) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+
+
+
+.background {
+    background-image: url('./images/Background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* or any height like 500px */
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    @include flex(column,4rem);
+    overflow-x: hidden;
+}
+
+  
+.flex1{
+    opacity: 1;
+    width: 100vw;
+    @include flex(row,12rem);
+   
+}
+
+
+
