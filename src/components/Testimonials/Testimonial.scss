@@ -1,0 +1,213 @@
+// html,body {
+//     margin: 0;
+//     padding: 0;
+// }
+// .top-img {
+//     background-image: url('./images/ytreklol 3 (2).png');
+//     background-position: center;
+//     background-size: cover;
+//     height: 16vh;
+//     width: 100%;
+// }
+
+// .text {
+//    text-align: center;
+//    font-size: 4rem;
+//    margin: 3rem 0;
+//    line-height: 1;
+// }
+
+// .testimonial-section {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 7rem;
+// }
+
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+//     font-family: 'nb', sans-serif;
+//   }
+  
+//   .top-img {
+//     background-image: url('./images/ytreklol 3 (2).png');
+//     background-position: center;
+//     background-size: cover;
+//     height: 16vh;
+//     width: 100%;
+//   }
+  
+//   .text {
+//     text-align: center;
+//     font-size: 3rem;
+//     margin: 3rem 1rem;
+//     line-height: 1.2;
+//     color: #0f0f0f;
+  
+//     h1 {
+//       font-weight: 600;
+//     }
+//   }
+  
+//   .testimonial-section {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 7rem;
+//     flex-wrap: wrap;
+//     padding: 2rem;
+  
+//     .testimonial {
+//       img {
+//         width: 250px;
+//         height: auto;
+//         border-radius: 16px;
+//         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+//         transition: transform 0.3s ease;
+  
+//         &:hover {
+//           transform: scale(1.05);
+//         }
+//       }
+//     }
+//   }
+  
+//   // Responsive Design
+//   @media (max-width: 1024px) {
+//     .text {
+//       font-size: 2.5rem;
+//     }
+  
+//     .testimonial-section {
+//       gap: 4rem;
+//     }
+//   }
+  
+//   @media (max-width: 768px) {
+//     .text {
+//       font-size: 2rem;
+//       margin: 2rem 1rem;
+//     }
+  
+//     .testimonial-section {
+//       flex-direction: column;
+//       gap: 2rem;
+//       padding: 1.5rem;
+  
+//       .testimonial img {
+//         width: 80%;
+//         max-width: 300px;
+//       }
+//     }
+//   }
+  
+//   @media (max-width: 480px) {
+//     .text {
+//       font-size: 1.6rem;
+//     }
+  
+//     .testimonial img {
+//       width: 100%;
+//       max-width: 280px;
+//     }
+//   }
+  
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nb', sans-serif;
+}
+
+.top-img {
+    background-image: url('./images/ytreklol 3 (2).png');
+    background-position: center;
+    background-size: cover;
+    height: 16vh;
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 1rem;
+    line-height: 1.2;
+    color: #0f0f0f;
+
+    h1 {
+        font-weight: 600;
+    }
+}
+
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    .testimonial {
+        img {
+            width: 450px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+    .text {
+        font-size: 2.5rem;
+    }
+
+    .testimonial-section {
+        gap: 4rem;
+    }
+}
+
+// Adjusting for laptops (1024px–1280px)
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .testimonial img {
+        width: 60%; /* Adjust image size */
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .testimonial-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem;
+
+        .testimonial img {
+            width: 80%;
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 1.6rem;
+    }
+
+    .testimonial img {
+        width: 100%;
+        max-width: 280px;
+    }
+}

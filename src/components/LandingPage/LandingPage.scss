@@ -1,43 +1,66 @@
-body,
-html {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
+// body,
+// html {
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//     font-size: 16px;
+// }
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+    
+// }
+
+
+
+// @media screen and (max-width: 600px) {
+//   .container {
+//     min-width: 100%; /* Set min-width to 100% for small screens */
+//     padding: 10px; /* Adjust padding for smaller screens */
+//   }
+  
+// }
+
+// .heading {
+//     background-image: url('./images/Group 41264 1 (1).png');
+//     background-size: cover;
+//     background-position: center;
+//     height: 100vh; /* or any height like 500px */
+//     width: 100%;
+//     color: white;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+/* Reset and base styles */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  box-sizing: border-box;
 }
 
-@font-face {
-  font-family: ba;
-  src: url(../../assets/SuisseIntl-Regular.ttf);
-}
-
-
-
-@media screen and (max-width: 600px) {
-  .container {
-    min-width: 100%; /* Set min-width to 100% for small screens */
-    padding: 10px; /* Adjust padding for smaller screens */
-  }
-  
-}
-
+/* Responsive image container */
 .heading {
-  
-    background-image: url('./images/Group 41264 1 (1).png');
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* or any height like 500px */
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Maintains aspect ratio */
+  background-image: url('./images/Group 41264 1 (1).png');
+  background-size: contain; /* ensures image shrinks */
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
+/* Fallback for older browsers */
+@media screen and (max-width: 768px) {
+  .heading {
+    aspect-ratio: auto;
+    height: 50vh; /* adjust for small screens */
+    background-size: contain;
+  }
 }
